@@ -1,0 +1,264 @@
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.827), rgba(0, 0, 0, 0.8)), url('../Food.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.menu__section {
+    padding: 15px;
+    color: var(--primary);
+}
+
+.menu__section__container {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.menu__section__container__title {
+    float: left;
+    color: var(--orange);
+}
+
+.menu__section__container__form {
+    float: right;
+    margin: 22px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .5s ease-in-out;
+}
+
+.menu__section__container__input {
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.menu__section__container__button {
+    background: var(--orange);
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    color: var(--primary);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.menu__section__container__button:hover {
+    border-color: var(--orange);
+    background: transparent;
+}
+
+.menupage__content {
+    width: 90%;
+    margin: auto
+}
+
+.menupage__content__p {
+    font-size: 24px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.article {
+    float: left;
+    width: 60%;
+}
+
+.article__title__ {
+    color: var(--primary);
+    font-size: 32px;
+}
+
+.aside {
+    margin: 10px 0;
+    float: right;
+    width: 35%;
+    padding: 15px;
+    background: var(--bg);
+    color: var(--primary);
+    border-radius: 10px;
+}
+
+.aside__title {
+    color: var(--primary);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.quoteform__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    color: var(--primary);
+}
+
+.quoteform__label {
+    padding-left: 10px;
+}
+
+.quoteform__input {
+    height: 40px;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.quoteform__textarea {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.quoteform__button {
+    height: 40px;
+    background: var(--orange);
+    border: 2px solid transparent;
+    padding: 0 20px;
+    color: var(--primary);
+    border-radius: 10px;
+    cursor: pointer;
+    width: max-content;
+    transition: .3s ease-in-out;  
+}
+
+.quoteform__button:hover {
+    background: transparent;
+    border: 2px solid var(--orange);
+    transform: translateY(-7px)
+}
+
+.menu__ {
+    width: 100%;
+    float: left;
+}
+
+.menu__content__ {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__content__items__ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+.menugroup {
+    width: 120px;
+    height: 112px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.menugroup:hover {
+    background: var(--cartNumBg);
+}
+
+.menugroup__content {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background: var(--lightgrey); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menugroup__content:hover {
+    background: var(--headingColor);
+}
+
+.menugroup__content__icon {
+    /* color: var(--cartNumBg); */
+    font-size: 36px;
+}
+
+.group__content__icon:hover {
+    color: var(--textColor);
+}
+
+.menugroup__p {
+    text-align: center;
+}
+
+.menu__contents__ {
+    width: 100%;
+}
+
+@media screen and (max-width: 998px) {
+    .menu__section__container {
+        width: 90%;
+    }
+
+    .menu__section__container__title {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu__section__container__form {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px
+    }
+
+    .article {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .article__li__p {
+        font-size: 18px;
+    }
+
+    .aside {
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center; 
+    }
+
+    .quoteform__content {
+        display: block;
+    }
+
+    .quoteform__input, .quoteform__textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu__ {
+        float: none;
+    }
+}

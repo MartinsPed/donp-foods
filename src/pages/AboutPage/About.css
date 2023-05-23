@@ -1,0 +1,117 @@
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.827), rgba(0, 0, 0, 0.8)), url('../Food.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+}
+
+.about__section {
+    padding: 15px;
+}
+
+.about__section__container {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.about__section__title {
+    float: left;
+    color: var(--orange);
+}
+
+.about__section__form {
+    float: right;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about__section__form__input {
+    height: 40px;
+    width: 250px;
+    padding: 4px;
+    border-radius: 10px;
+    border: none;
+    outline: none
+}
+
+.about__section__form__button {
+    background: var(--orange);
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    color: var(--primary);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.about__section__form__button:hover {
+    background: transparent;
+    border-color: var(--orange);
+    transform: translateY(-7px)
+}
+
+.about__article {
+    display: grid;
+    place-items: center;
+    color: var(--primary);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about__article__title {
+    color: var(--orange);
+}
+
+.about__article__p {
+    transition: .3s ease-in-out;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    transition: .3s ease-in-out;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+.about__button {
+    background: var(--orange);
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    font-size: 18px;
+}
+
+.about__button:hover {
+    background: transparent;
+    border-color: var(--orange);
+    transform: translateY(-7px)
+}
+
+@media screen and (max-width: 768px) {
+
+    .about__container {
+        gap: 10px;
+    }
+
+    .about__section__container {
+        width: 100%;
+    }
+    .about__section__title, .about__section__form {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about__article__p {
+        text-align: left;
+    }
+}

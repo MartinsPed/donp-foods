@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --headingColor: #2e2e2e;
+  --textColor: #515151;
+  --cartNumBg: #e80013;
+  --primary: #f5f3f3;
+  --orange: #fd7e14;
+  --rowBg: #ff8300;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --darkgrey: #6c757d;
+  --bg: #343a40;
+  --blue2: #007bff;
+  --lightgrey: #ccc;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --cardOverlay: rgba(256, 256, 256, 0.4);
+  --lightTextGray: #9ca0ab;
+  --cartBg: #282a2c;
+  --cartItem: #2e3033;
+  --cartTotal: #343739;
+  --breakpoint-xs: 0;
+  --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+  --xxl: 1536px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.827), rgba(0, 0, 0, 0.8)), url('../public/img/Food.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--orange);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--lightgrey);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 10px;
+}
+

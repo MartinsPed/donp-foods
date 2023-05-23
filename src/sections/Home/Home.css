@@ -1,0 +1,209 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+}
+
+.home__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8px 0;
+    gap: 24px;
+}
+
+.home__delivery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 4px 16px;
+    background: var(--orange);
+    border-radius: 20px;
+}
+
+.bike__delivery {
+    color: var(--cartNumBg);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bike__image__div {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bike__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    font-size: 72px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: var(--lightgrey);
+}
+
+.text__span {
+    color: var(--orange);
+    font-size: 80px;
+}
+
+.info__text {
+    text-align: left;
+    color: var(--lightgrey);
+    width: 80%;
+    font-size: 20px;
+}
+
+.btn {
+    background: var(--orange);
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 8px 16px;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    background: transparent;
+    border-color: var(--orange);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.home__content__2 {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 8px 0;
+    position: relative;
+}
+
+.content__2 {
+    height: 760px;
+    width: auto;
+    margin-left: auto;
+}
+
+.content__2__image {
+    width: 100%;
+    height: 100%;
+}
+
+.content__2__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px 80px;
+}
+
+.right__content {
+    width: 250px;
+    padding: 24px;
+    border-radius: 20px;
+    background: var(--cardOverlay);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image1 {
+    width: 160px;
+    margin-top: -80px;
+}
+
+.image1__desc {
+    color: var(--bg);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.image1__desc2 {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.image1__price {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.image1__span {
+    color: var(--cartNumBg);
+}
+@media screen and (max-width: 998px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .home__content {
+        align-items: center;
+    }
+
+    .text {
+        font-size: 35px;
+    }
+
+    .text__span {
+        font-size: 40px;
+    }
+
+    .info__text {
+        width: 100%;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    .content__2 {
+        height: 850px;
+    }
+
+    .content__2__content {
+        padding: 16px 0;
+        gap: 10px;
+    }
+
+    .right__content {
+        width: 200px;
+        padding: 16px;
+    }
+    
+    .image1 {
+        width: 100px;
+        margin-top: -40px;
+    }
+
+    .image1__desc {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .image1__desc2 {
+        font-size: 16px;
+        margin: 2px 0;
+    }
+}

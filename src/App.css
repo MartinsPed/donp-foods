@@ -1,0 +1,11 @@
+.App {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* background: var(--primary); */
+}
+
+main {
+    margin-top: 80px;
+}
